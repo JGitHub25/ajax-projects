@@ -1,4 +1,4 @@
-const URL = "https://randomuser.me/api/";
+import { getUserData } from "./getData.js";
 
 //ELEMENTOS DE LA PÁGINA
 const descripcion = document.querySelector(".user-title");
@@ -17,3 +17,6 @@ iconos.forEach((element) => {
     console.log("Funciono también");
   });
 });
+
+const user = await getUserData();
+console.log(user);
