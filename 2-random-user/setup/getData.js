@@ -23,7 +23,7 @@ export async function getUserData() {
 
       return {
         image,
-        nom: `${first} ${last}`,
+        name: `${first} ${last}`,
         email,
         street: `${number} ${name}`,
         age,
