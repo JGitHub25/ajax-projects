@@ -7,7 +7,6 @@ async function getCocktailsData(url) {
     const data = await response.json();
     return data;
   } catch (error) {
-    hideLoader();
     console.log(error);
   }
 }
